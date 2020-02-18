@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -13,184 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:Battery_Cell BT1
-U 1 1 5E284196
-P 6800 3150
-F 0 "BT1" H 6918 3246 50  0000 L CNN
-F 1 "Battery_Cell" H 6918 3155 50  0000 L CNN
-F 2 "kifootp:CR2032" V 6800 3210 50  0001 C CNN
-F 3 "~" V 6800 3210 50  0001 C CNN
-	1    6800 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5E284BD4
-P 6800 2700
-F 0 "#FLG01" H 6800 2775 50  0001 C CNN
-F 1 "PWR_FLAG" H 6800 2873 50  0000 C CNN
-F 2 "" H 6800 2700 50  0001 C CNN
-F 3 "~" H 6800 2700 50  0001 C CNN
-	1    6800 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5E285641
-P 7150 3500
-F 0 "#FLG02" H 7150 3575 50  0001 C CNN
-F 1 "PWR_FLAG" H 7150 3673 50  0000 C CNN
-F 2 "" H 7150 3500 50  0001 C CNN
-F 3 "~" H 7150 3500 50  0001 C CNN
-	1    7150 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 5E285F2E
-P 6800 3550
-F 0 "#PWR012" H 6800 3300 50  0001 C CNN
-F 1 "GND" H 6805 3377 50  0000 C CNN
-F 2 "" H 6800 3550 50  0001 C CNN
-F 3 "" H 6800 3550 50  0001 C CNN
-	1    6800 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR013
-U 1 1 5E286565
-P 7200 2700
-F 0 "#PWR013" H 7200 2550 50  0001 C CNN
-F 1 "+3V3" H 7215 2873 50  0000 C CNN
-F 2 "" H 7200 2700 50  0001 C CNN
-F 3 "" H 7200 2700 50  0001 C CNN
-	1    7200 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 3250 6800 3500
-Wire Wire Line
-	6800 3500 7150 3500
-Connection ~ 6800 3500
-Wire Wire Line
-	6800 3500 6800 3550
-Wire Wire Line
-	6800 2700 6800 2950
-Wire Wire Line
-	6800 2700 7200 2700
-Connection ~ 6800 2700
-$Comp
-L Device:C C1
-U 1 1 5E28707F
-P 6250 1300
-F 0 "C1" H 6365 1346 50  0000 L CNN
-F 1 "4.7uF" H 6365 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6288 1150 50  0001 C CNN
-F 3 "~" H 6250 1300 50  0001 C CNN
-	1    6250 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5E28742F
-P 6850 1300
-F 0 "C2" H 6965 1346 50  0000 L CNN
-F 1 "0.1uF" H 6965 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6888 1150 50  0001 C CNN
-F 3 "~" H 6850 1300 50  0001 C CNN
-	1    6850 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 5E28779C
-P 6550 1800
-F 0 "#PWR011" H 6550 1550 50  0001 C CNN
-F 1 "GND" H 6555 1627 50  0000 C CNN
-F 2 "" H 6550 1800 50  0001 C CNN
-F 3 "" H 6550 1800 50  0001 C CNN
-	1    6550 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR010
-U 1 1 5E287A3E
-P 6550 900
-F 0 "#PWR010" H 6550 750 50  0001 C CNN
-F 1 "+3V3" H 6565 1073 50  0000 C CNN
-F 2 "" H 6550 900 50  0001 C CNN
-F 3 "" H 6550 900 50  0001 C CNN
-	1    6550 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 1150 6250 1000
-Wire Wire Line
-	6250 1000 6550 1000
-Wire Wire Line
-	6550 1000 6550 900 
-Wire Wire Line
-	6550 1000 6850 1000
-Wire Wire Line
-	6850 1000 6850 1150
-Connection ~ 6550 1000
-Wire Wire Line
-	6250 1450 6250 1650
-Wire Wire Line
-	6250 1650 6550 1650
-Wire Wire Line
-	6550 1650 6550 1800
-Wire Wire Line
-	6550 1650 6850 1650
-Wire Wire Line
-	6850 1650 6850 1450
-Connection ~ 6550 1650
-$Comp
-L power:+3V3 #PWR03
-U 1 1 5E28A9FB
-P 3550 1450
-F 0 "#PWR03" H 3550 1300 50  0001 C CNN
-F 1 "+3V3" H 3565 1623 50  0000 C CNN
-F 2 "" H 3550 1450 50  0001 C CNN
-F 3 "" H 3550 1450 50  0001 C CNN
-	1    3550 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5E28B150
-P 3600 4400
-F 0 "#PWR04" H 3600 4150 50  0001 C CNN
-F 1 "GND" H 3605 4227 50  0000 C CNN
-F 2 "" H 3600 4400 50  0001 C CNN
-F 3 "" H 3600 4400 50  0001 C CNN
-	1    3600 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 4100 3450 4250
-Wire Wire Line
-	3450 4250 3550 4250
-Wire Wire Line
-	3600 4250 3600 4400
-Wire Wire Line
-	3750 4100 3750 4250
-Wire Wire Line
-	3750 4250 3650 4250
-Connection ~ 3600 4250
-Wire Wire Line
-	3550 4100 3550 4250
-Connection ~ 3550 4250
-Wire Wire Line
-	3550 4250 3600 4250
-Wire Wire Line
-	3650 4100 3650 4250
-Connection ~ 3650 4250
-Wire Wire Line
-	3650 4250 3600 4250
-Wire Wire Line
-	3550 1450 3550 2000
 $Comp
 L Connector:Conn_01x20_Male J1
 U 1 1 5E28D17B
@@ -206,17 +28,6 @@ Wire Wire Line
 	2150 2200 2550 2200
 Wire Wire Line
 	2150 2300 2550 2300
-$Comp
-L RF_Bluetooth:BL652 U1
-U 1 1 5E2907FA
-P 3550 3100
-F 0 "U1" H 3550 4381 50  0000 C CNN
-F 1 "BL652" H 3550 4290 50  0000 C CNN
-F 2 "RF_Module:Laird_BL652" H 3550 1900 50  0001 C CNN
-F 3 "http://cdn.lairdtech.com/home/brandworld/files/Datasheet%20-%20BL652.pdf" H 3550 1800 50  0001 C CNN
-	1    3550 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2150 3900 2550 3900
 Wire Wire Line
@@ -249,55 +60,6 @@ Wire Wire Line
 	2150 2500 2550 2500
 Wire Wire Line
 	2150 2400 2550 2400
-$Comp
-L Connector:Conn_01x04_Male J2
-U 1 1 5E29BC10
-P 5350 1550
-F 0 "J2" H 5322 1432 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 5322 1523 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5350 1550 50  0001 C CNN
-F 3 "~" H 5350 1550 50  0001 C CNN
-	1    5350 1550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5E29CBFC
-P 5050 1750
-F 0 "#PWR06" H 5050 1500 50  0001 C CNN
-F 1 "GND" H 5055 1577 50  0000 C CNN
-F 2 "" H 5050 1750 50  0001 C CNN
-F 3 "" H 5050 1750 50  0001 C CNN
-	1    5050 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR05
-U 1 1 5E29D35D
-P 5000 1150
-F 0 "#PWR05" H 5000 1000 50  0001 C CNN
-F 1 "+3V3" H 5015 1323 50  0000 C CNN
-F 2 "" H 5000 1150 50  0001 C CNN
-F 3 "" H 5000 1150 50  0001 C CNN
-	1    5000 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 1150 5000 1350
-Wire Wire Line
-	5000 1350 5150 1350
-Wire Wire Line
-	5150 1650 5050 1650
-Wire Wire Line
-	5050 1650 5050 1750
-Wire Wire Line
-	4850 1550 5150 1550
-Wire Wire Line
-	4550 1450 4550 2200
-Wire Wire Line
-	4550 1450 5150 1450
-Wire Wire Line
-	4850 1550 4850 2300
 Wire Wire Line
 	4850 2300 4550 2300
 $Comp
@@ -713,4 +475,16 @@ Wire Wire Line
 Connection ~ 6300 3800
 Wire Wire Line
 	6300 3800 6300 3900
+$Sheet
+S 4650 5650 2750 650 
+U 5E4CCB9A
+F0 "Power" 50
+F1 "power.sch" 50
+$EndSheet
+$Sheet
+S 7650 3250 2300 700 
+U 5E4EF39F
+F0 "nRFModule" 50
+F1 "nrfmodule.sch" 50
+$EndSheet
 $EndSCHEMATC

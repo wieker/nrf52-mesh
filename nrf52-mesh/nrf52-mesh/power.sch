@@ -1,0 +1,226 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E4E0BA5
+P 8700 1850
+AR Path="/5E4E0BA5" Ref="BT?"  Part="1" 
+AR Path="/5E4CCB9A/5E4E0BA5" Ref="BT?"  Part="1" 
+F 0 "BT?" H 8818 1946 50  0000 L CNN
+F 1 "Battery_Cell" H 8818 1855 50  0000 L CNN
+F 2 "kifootp:CR2032" V 8700 1910 50  0001 C CNN
+F 3 "~" V 8700 1910 50  0001 C CNN
+	1    8700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E4E0BAB
+P 8700 1400
+AR Path="/5E4E0BAB" Ref="#FLG?"  Part="1" 
+AR Path="/5E4CCB9A/5E4E0BAB" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 8700 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 8700 1573 50  0000 C CNN
+F 2 "" H 8700 1400 50  0001 C CNN
+F 3 "~" H 8700 1400 50  0001 C CNN
+	1    8700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E4E0BB1
+P 9050 2200
+AR Path="/5E4E0BB1" Ref="#FLG?"  Part="1" 
+AR Path="/5E4CCB9A/5E4E0BB1" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 9050 2275 50  0001 C CNN
+F 1 "PWR_FLAG" H 9050 2373 50  0000 C CNN
+F 2 "" H 9050 2200 50  0001 C CNN
+F 3 "~" H 9050 2200 50  0001 C CNN
+	1    9050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E4E0BB7
+P 8700 2250
+AR Path="/5E4E0BB7" Ref="#PWR?"  Part="1" 
+AR Path="/5E4CCB9A/5E4E0BB7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8700 2000 50  0001 C CNN
+F 1 "GND" H 8705 2077 50  0000 C CNN
+F 2 "" H 8700 2250 50  0001 C CNN
+F 3 "" H 8700 2250 50  0001 C CNN
+	1    8700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E4E0BBD
+P 9100 1400
+AR Path="/5E4E0BBD" Ref="#PWR?"  Part="1" 
+AR Path="/5E4CCB9A/5E4E0BBD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9100 1250 50  0001 C CNN
+F 1 "+3V3" H 9115 1573 50  0000 C CNN
+F 2 "" H 9100 1400 50  0001 C CNN
+F 3 "" H 9100 1400 50  0001 C CNN
+	1    9100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1950 8700 2200
+Wire Wire Line
+	8700 2200 9050 2200
+Connection ~ 8700 2200
+Wire Wire Line
+	8700 2200 8700 2250
+Wire Wire Line
+	8700 1400 8700 1650
+Wire Wire Line
+	8700 1400 9100 1400
+Connection ~ 8700 1400
+$Comp
+L Device:C C?
+U 1 1 5E4EB3FC
+P 1850 1500
+AR Path="/5E4EB3FC" Ref="C?"  Part="1" 
+AR Path="/5E4CCB9A/5E4EB3FC" Ref="C?"  Part="1" 
+F 0 "C?" H 1965 1546 50  0000 L CNN
+F 1 "4.7uF" H 1965 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1888 1350 50  0001 C CNN
+F 3 "~" H 1850 1500 50  0001 C CNN
+	1    1850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E4EB402
+P 2450 1500
+AR Path="/5E4EB402" Ref="C?"  Part="1" 
+AR Path="/5E4CCB9A/5E4EB402" Ref="C?"  Part="1" 
+F 0 "C?" H 2565 1546 50  0000 L CNN
+F 1 "0.1uF" H 2565 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2488 1350 50  0001 C CNN
+F 3 "~" H 2450 1500 50  0001 C CNN
+	1    2450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E4EB408
+P 2150 2000
+AR Path="/5E4EB408" Ref="#PWR?"  Part="1" 
+AR Path="/5E4CCB9A/5E4EB408" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 1750 50  0001 C CNN
+F 1 "GND" H 2155 1827 50  0000 C CNN
+F 2 "" H 2150 2000 50  0001 C CNN
+F 3 "" H 2150 2000 50  0001 C CNN
+	1    2150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E4EB40E
+P 2150 1100
+AR Path="/5E4EB40E" Ref="#PWR?"  Part="1" 
+AR Path="/5E4CCB9A/5E4EB40E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 950 50  0001 C CNN
+F 1 "+3V3" H 2165 1273 50  0000 C CNN
+F 2 "" H 2150 1100 50  0001 C CNN
+F 3 "" H 2150 1100 50  0001 C CNN
+	1    2150 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1350 1850 1200
+Wire Wire Line
+	1850 1200 2150 1200
+Wire Wire Line
+	2150 1200 2150 1100
+Wire Wire Line
+	2150 1200 2450 1200
+Wire Wire Line
+	2450 1200 2450 1350
+Connection ~ 2150 1200
+Wire Wire Line
+	1850 1650 1850 1850
+Wire Wire Line
+	1850 1850 2150 1850
+Wire Wire Line
+	2150 1850 2150 2000
+Wire Wire Line
+	2150 1850 2450 1850
+Wire Wire Line
+	2450 1850 2450 1650
+Connection ~ 2150 1850
+$Comp
+L kilib:MAX1555 U?
+U 1 1 5E516F59
+P 1800 4200
+F 0 "U?" H 1800 4165 50  0000 C CNN
+F 1 "MAX1555" H 1800 4074 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1800 4200 50  0001 C CNN
+F 3 "https://www.mouser.ee/datasheet/2/256/MAX1551-MAX1555-1515122.pdf" H 1800 4200 50  0001 C CNN
+	1    1800 4200
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  3450 5400 3450
+Wire Notes Line
+	5400 3450 5400 650 
+$Comp
+L Interface_USB:CP2102N-A01-GQFN24 U?
+U 1 1 5E5187FA
+P 5700 5000
+F 0 "U?" H 5700 6081 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN24" H 5700 5990 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6150 4200 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5750 3950 50  0001 C CNN
+	1    5700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:TPS560200 U?
+U 1 1 5E51A6D3
+P 8200 4400
+F 0 "U?" H 8200 4725 50  0000 C CNN
+F 1 "TPS560200" H 8200 4634 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8250 4150 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps560200.pdf" H 7950 4050 50  0001 C CNN
+	1    8200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:TLV62568DBV U?
+U 1 1 5E51ADDB
+P 1600 6750
+F 0 "U?" H 1600 7117 50  0000 C CNN
+F 1 "TLV62568DBV" H 1600 7026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1650 6500 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv62568.pdf" H 1350 7200 50  0001 C CNN
+	1    1600 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L kilib:FAN5341 U?
+U 1 1 5E51BD5F
+P 4100 6900
+F 0 "U?" H 4100 7381 50  0000 C CNN
+F 1 "FAN5341" H 4100 7290 50  0000 C CNN
+F 2 "kifootp:FAN5341" H 4150 6650 50  0001 L CNN
+F 3 "" H 4100 6900 50  0001 C CNN
+	1    4100 6900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
