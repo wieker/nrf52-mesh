@@ -521,7 +521,7 @@ Wire Wire Line
 	2450 6650 2800 6650
 Connection ~ 2800 6650
 Wire Wire Line
-	2800 6650 3200 6650
+	2800 6650 3150 6650
 Wire Wire Line
 	750  6650 1100 6650
 Wire Wire Line
@@ -563,4 +563,22 @@ Wire Wire Line
 Connection ~ 2100 7550
 Wire Wire Line
 	2100 7550 2800 7550
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E52A07E
+P 3150 6250
+AR Path="/5E52A07E" Ref="#PWR?"  Part="1" 
+AR Path="/5E4CCB9A/5E52A07E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3150 6100 50  0001 C CNN
+F 1 "+3V3" H 3165 6423 50  0000 C CNN
+F 2 "" H 3150 6250 50  0001 C CNN
+F 3 "" H 3150 6250 50  0001 C CNN
+	1    3150 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6250 3150 6650
+Connection ~ 3150 6650
+Wire Wire Line
+	3150 6650 3200 6650
 $EndSCHEMATC
