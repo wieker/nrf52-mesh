@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,85 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Interface_USB:CP2102N-A01-GQFN24 U?
+U 1 1 5E560E60
+P 5450 3250
+AR Path="/5E4CCB9A/5E560E60" Ref="U?"  Part="1" 
+AR Path="/5E4F8472/5E560E60" Ref="U?"  Part="1" 
+F 0 "U?" H 5450 4331 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN24" H 5450 4240 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5900 2450 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5500 2200 50  0001 C CNN
+	1    5450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L cyUsb:USBFCI_10103594 X?
+U 1 1 5E5615D1
+P 3500 3750
+F 0 "X?" H 3507 4197 42  0000 C CNN
+F 1 "USBFCI_10103594" H 3507 4118 42  0000 C CNN
+F 2 "" H 3500 3750 50  0001 C CNN
+F 3 "" H 3500 3750 50  0001 C CNN
+	1    3500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3650 4850 3650
+Wire Wire Line
+	4850 3750 3900 3750
+NoConn ~ 3900 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5E563A94
+P 4600 4850
+F 0 "#PWR?" H 4600 4600 50  0001 C CNN
+F 1 "GND" H 4605 4677 50  0000 C CNN
+F 2 "" H 4600 4850 50  0001 C CNN
+F 3 "" H 4600 4850 50  0001 C CNN
+	1    4600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E565FBF
+P 4150 3100
+F 0 "#PWR?" H 4150 2950 50  0001 C CNN
+F 1 "+5V" H 4165 3273 50  0000 C CNN
+F 2 "" H 4150 3100 50  0001 C CNN
+F 3 "" H 4150 3100 50  0001 C CNN
+	1    4150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3550 4150 3550
+Wire Wire Line
+	4150 3100 4150 3250
+Connection ~ 4150 3550
+Wire Wire Line
+	4150 3550 4850 3550
+Wire Wire Line
+	3900 3950 4250 3950
+Wire Wire Line
+	4250 3950 4250 4700
+Wire Wire Line
+	4250 4700 4600 4700
+Wire Wire Line
+	5550 4700 5550 4150
+Wire Wire Line
+	5450 4150 5450 4700
+Connection ~ 5450 4700
+Wire Wire Line
+	5450 4700 5550 4700
+Wire Wire Line
+	4600 4850 4600 4700
+Connection ~ 4600 4700
+Wire Wire Line
+	4600 4700 5450 4700
+Wire Wire Line
+	4850 3250 4150 3250
+Connection ~ 4150 3250
+Wire Wire Line
+	4150 3250 4150 3550
 $EndSCHEMATC

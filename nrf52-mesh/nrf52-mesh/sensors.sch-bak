@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -13,15 +13,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Sensor_Motion:ICM-20948 U?
-U 1 1 5E54C40F
-P 2650 3100
-F 0 "U?" H 2650 2311 50  0000 C CNN
-F 1 "ICM-20948" H 2650 2220 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 2650 2100 50  0001 C CNN
-F 3 "http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf" H 2650 2950 50  0001 C CNN
-	1    2650 3100
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

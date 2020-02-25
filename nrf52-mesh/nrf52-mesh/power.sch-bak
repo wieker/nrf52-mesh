@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -180,17 +180,6 @@ Wire Notes Line
 Wire Notes Line
 	5400 3450 5400 650 
 $Comp
-L Interface_USB:CP2102N-A01-GQFN24 U?
-U 1 1 5E5187FA
-P 5700 5000
-F 0 "U?" H 5700 6081 50  0000 C CNN
-F 1 "CP2102N-A01-GQFN24" H 5700 5990 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6150 4200 50  0001 L CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5750 3950 50  0001 C CNN
-	1    5700 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Switching:TPS560200 U?
 U 1 1 5E51A6D3
 P 9500 4700
@@ -215,12 +204,12 @@ $EndComp
 $Comp
 L kilib:FAN5341 U?
 U 1 1 5E51BD5F
-P 4100 6900
-F 0 "U?" H 4100 7381 50  0000 C CNN
-F 1 "FAN5341" H 4100 7290 50  0000 C CNN
-F 2 "kifootp:FAN5341" H 4150 6650 50  0001 L CNN
-F 3 "" H 4100 6900 50  0001 C CNN
-	1    4100 6900
+P 4800 5400
+F 0 "U?" H 4800 5881 50  0000 C CNN
+F 1 "FAN5341" H 4800 5790 50  0000 C CNN
+F 2 "kifootp:FAN5341" H 4850 5150 50  0001 L CNN
+F 3 "" H 4800 5400 50  0001 C CNN
+	1    4800 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -581,4 +570,8 @@ Wire Wire Line
 Connection ~ 3150 6650
 Wire Wire Line
 	3150 6650 3200 6650
+Text GLabel 3650 5400 0    50   Input ~ 0
+LEDREGEN
+Wire Wire Line
+	3650 5400 4400 5400
 $EndSCHEMATC

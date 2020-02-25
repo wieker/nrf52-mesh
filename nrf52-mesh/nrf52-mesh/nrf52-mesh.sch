@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -48,5 +48,11 @@ S 1650 1000 2750 400
 U 5E4FE118
 F0 "IO" 50
 F1 "io.sch" 50
+$EndSheet
+$Sheet
+S 2550 3450 2550 450 
+U 5E55A119
+F0 "Debug" 50
+F1 "debug.sch" 50
 $EndSheet
 $EndSCHEMATC

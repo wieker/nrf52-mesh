@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -130,4 +130,53 @@ Wire Wire Line
 	5650 2500 5350 2500
 Text GLabel 5650 2500 2    50   Input ~ 0
 SWDIO
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5E56ADA4
+P 7150 3750
+F 0 "J?" H 7200 4167 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 7200 4076 50  0000 C CNN
+F 2 "" H 7150 3750 50  0001 C CNN
+F 3 "~" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3650 7450 3650
+Text GLabel 8050 3650 2    50   Input ~ 0
+SWDCLK
+Text GLabel 7750 3550 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	7450 3550 7750 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5E56D12B
+P 6650 4200
+F 0 "#PWR?" H 6650 3950 50  0001 C CNN
+F 1 "GND" H 6655 4027 50  0000 C CNN
+F 2 "" H 6650 4200 50  0001 C CNN
+F 3 "" H 6650 4200 50  0001 C CNN
+	1    6650 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3650 6650 3650
+Wire Wire Line
+	6650 3650 6650 3750
+Wire Wire Line
+	6950 3750 6650 3750
+Connection ~ 6650 3750
+Wire Wire Line
+	6650 3750 6650 3950
+Wire Wire Line
+	6950 3950 6650 3950
+Connection ~ 6650 3950
+Wire Wire Line
+	6650 3950 6650 4200
+NoConn ~ 6950 3850
+NoConn ~ 7450 3950
+NoConn ~ 7450 3850
+NoConn ~ 7450 3750
+NoConn ~ 6950 3550
 $EndSCHEMATC
