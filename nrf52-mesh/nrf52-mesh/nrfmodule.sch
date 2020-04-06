@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -229,4 +229,78 @@ NoConn ~ 3350 2700
 NoConn ~ 3350 2600
 NoConn ~ 3350 2500
 NoConn ~ 3350 2400
+$Comp
+L Device:C C?
+U 1 1 5E8C23CF
+P 1950 2050
+AR Path="/5E8C23CF" Ref="C?"  Part="1" 
+AR Path="/5E4CCB9A/5E8C23CF" Ref="C?"  Part="1" 
+F 0 "C?" H 2065 2096 50  0000 L CNN
+F 1 "4.7uF" H 2065 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1988 1900 50  0001 C CNN
+F 3 "~" H 1950 2050 50  0001 C CNN
+	1    1950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E8C23D5
+P 2550 2050
+AR Path="/5E8C23D5" Ref="C?"  Part="1" 
+AR Path="/5E4CCB9A/5E8C23D5" Ref="C?"  Part="1" 
+F 0 "C?" H 2665 2096 50  0000 L CNN
+F 1 "0.1uF" H 2665 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2588 1900 50  0001 C CNN
+F 3 "~" H 2550 2050 50  0001 C CNN
+	1    2550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8C23DB
+P 2250 2550
+AR Path="/5E8C23DB" Ref="#PWR?"  Part="1" 
+AR Path="/5E4CCB9A/5E8C23DB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2250 2300 50  0001 C CNN
+F 1 "GND" H 2255 2377 50  0000 C CNN
+F 2 "" H 2250 2550 50  0001 C CNN
+F 3 "" H 2250 2550 50  0001 C CNN
+	1    2250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E8C23E1
+P 2250 1650
+AR Path="/5E8C23E1" Ref="#PWR?"  Part="1" 
+AR Path="/5E4CCB9A/5E8C23E1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2250 1500 50  0001 C CNN
+F 1 "+3V3" H 2265 1823 50  0000 C CNN
+F 2 "" H 2250 1650 50  0001 C CNN
+F 3 "" H 2250 1650 50  0001 C CNN
+	1    2250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1900 1950 1750
+Wire Wire Line
+	1950 1750 2250 1750
+Wire Wire Line
+	2250 1750 2250 1650
+Wire Wire Line
+	2250 1750 2550 1750
+Wire Wire Line
+	2550 1750 2550 1900
+Connection ~ 2250 1750
+Wire Wire Line
+	1950 2200 1950 2400
+Wire Wire Line
+	1950 2400 2250 2400
+Wire Wire Line
+	2250 2400 2250 2550
+Wire Wire Line
+	2250 2400 2550 2400
+Wire Wire Line
+	2550 2400 2550 2200
+Connection ~ 2250 2400
 $EndSCHEMATC

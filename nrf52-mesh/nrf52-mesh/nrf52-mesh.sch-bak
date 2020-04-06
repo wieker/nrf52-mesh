@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -54,5 +54,11 @@ S 2550 3450 2550 450
 U 5E55A119
 F0 "Debug" 50
 F1 "debug.sch" 50
+$EndSheet
+$Sheet
+S 4600 2100 2150 600 
+U 5E8D2EF3
+F0 "WiFi" 50
+F1 "wifi.sch" 50
 $EndSheet
 $EndSCHEMATC
